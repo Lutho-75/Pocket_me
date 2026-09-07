@@ -1,0 +1,13 @@
+# Pocket Me — AI Brain backend
+#   pip install -r requirements.txt
+
+fastapi>=0.115
+uvicorn[standard]>=0.30
+
+# Google's current unified GenAI SDK (`from google import genai`).
+# NOT the retired `google-generativeai` package — that SDK reached end of life
+# and its google.generativeai import path is no longer supported.
+google-genai>=1.0
+
+# Only needed when SUPABASE_JWT_SECRET is set (verified auth mode).
+pyjwt>=2.8
